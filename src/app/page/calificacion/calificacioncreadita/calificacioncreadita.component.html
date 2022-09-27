@@ -1,0 +1,22 @@
+<h2>Complete todo los campos por favor</h2>
+<div class="container">
+<h1>Calificacion</h1>
+<mat-form-field class="example-full-width">
+    <mat-label>Id</mat-label>
+    <input matInput placeholder="Id" [(ngModel)]="calificacion.id">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width">
+    <mat-label>Calificacion</mat-label>
+    <input matInput placeholder="Id" [(ngModel)]="calificacion.calificaciion">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>idTrainer</mat-label>
+    <input matInput placeholder="idTrainer" [(ngModel)]="calificacion.idTrainer">
+  </mat-form-field>
+
+
+<button mat-raised-button color="primary" (click)="aceptar()">Aceptar</button>
+  <button mat-raised-button color="warn" routerLink="/calificacion">Cancelar</button>
+  <p>{{mensaje}}</p>
+  </div>
